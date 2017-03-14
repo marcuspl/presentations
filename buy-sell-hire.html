@@ -1,24 +1,32 @@
 <!doctype html>
 <html>
+<!--
+This is a highly opinionated and hasty presentation that was originally asked to be something like:
+"stuff non-technical aspiring entrepreneurs should know about programmers and how to get them" or something.
 
+A part of the TOC was selected as the title of the full presentation and shifted it a bit toward the 
+question of how to buy your technical development. 
+
+We'll see how it goes.
+-->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <title>Luminare - Solving Sepsis</title>
 
-  <link rel="stylesheet" href="https://github.com/marcuspl/reveal.js/css/reveal.css">
-  <link rel="stylesheet" href="https://github.com/marcuspl/reveal.js/css/theme/white.css">
+  <link rel="stylesheet" href="reveal.js/blob/master/css/reveal.css">
+  <link rel="stylesheet" href="reveal.js/css/theme/white.css">
 
   <!-- Theme used for syntax highlighting of code -->
-  <link rel="stylesheet" href="https://github.com/marcuspl/reveal.js/lib/css/zenburn.css">
+  <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
 
   <!-- Printing and PDF exports -->
   <script>
       var link = document.createElement('link');
       link.rel = 'stylesheet';
       link.type = 'text/css';
-      link.href = window.location.search.match(/print-pdf/gi) ? 'https://github.com/marcuspl/reveal.js/css/print/pdf.css' : 'https://github.com/marcuspl/reveal.js/css/print/paper.css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
       document.getElementsByTagName('head')[0].appendChild(link);
   </script>
 
@@ -698,18 +706,28 @@
 
       <section>
         <h3>Keep moving!</h3>
+        <section>
+          <ul>
+            <li>All of the above things count as building your product.
+            <li>Discovering what your product should be counts as development.
+            <li>Part of a product is abstract. It doesn't mean it doesn't exist.
+            <li>While waiting for the perfect technical team there is a ton of stuff to do!
+          </ul>
+        </section>
+      <section>
         <ul>
-          <li>All of the above things count as building your product
-          <li>Discovering what your product should be counts as development
-          <li>Part of a product is abstract. It doesn't mean it doesn't exist.
-          <li>While waiting for the perfect technical team there is a ton of stuff to do!
+          <li>If you don't like it - fork and modify: <a href="https://github.com/marcuspl/presentations">https://github.com/marcuspl/presentations</a>
+          <li>The best prototype ever made: <a href="https://github.com/marcuspl/product-dummy-dummy">https://github.com/marcuspl/product-dummy-dummy</a>
+          <li>Email me or swing by my desk for questions, comments or coffee.
         </ul>
       </section>
+      </section>
+
     </div>
   </div>
 
-  <script src="https://github.com/marcuspl/reveal.js/lib/js/head.min.js"></script>
-  <script src="https://github.com/marcuspl/reveal.js/js/reveal.js"></script>
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
 
   <script>
         // More info https://github.com/hakimel/reveal.js#configuration
@@ -718,10 +736,10 @@
 
           // More info https://github.com/hakimel/reveal.js#dependencies
           dependencies: [
-            { src: 'https://github.com/marcuspl/reveal.js/plugin/markdown/marked.js' },
-            { src: 'https://github.com/marcuspl/reveal.js/plugin/markdown/markdown.js' },
-            { src: 'https://github.com/marcuspl/reveal.js/plugin/notes/notes.js', async: true },
-            { src: 'https://github.com/marcuspl/reveal.js/plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+            { src: 'reveal.js/plugin/markdown/marked.js' },
+            { src: 'reveal.js/plugin/markdown/markdown.js' },
+            { src: 'reveal.js/plugin/notes/notes.js', async: true },
+            { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
           ]
         });
 
