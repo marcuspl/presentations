@@ -1,0 +1,733 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Luminare - Solving Sepsis</title>
+
+  <link rel="stylesheet" href="https://github.com/marcuspl/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="https://github.com/marcuspl/reveal.js/css/theme/white.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="https://github.com/marcuspl/reveal.js/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'https://github.com/marcuspl/reveal.js/css/print/pdf.css' : 'https://github.com/marcuspl/reveal.js/css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+
+  <style>
+
+  </style>
+
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- <section data-background-image="img/stars_21.jpg"> -->
+
+      <section data-markdown>
+
+        <script type="text/template">
+          A Presentation involuntarily named
+          # Build, Buy or Hire
+          (Because I was sloppy with specifications. More on that later.)
+        </script>
+
+      </section>
+
+      <section data-markdown>
+
+        <script type="text/template">
+          ## Of geeks and startups
+          > For non-technical founders without a technical team
+        </script>
+
+      </section>
+
+
+      <section>
+        <h3>Table of contents</h3>
+        <ol>
+          <li class="fragment">
+            Introducing myself
+          <li class="fragment">
+            The struggles of the developer
+          <li class="fragment">
+            A few different ways to buy developers 
+          <li class="fragment">
+            What you can do on your own
+        </ol>
+      </section>
+
+      <section>
+        <h3>Section 1: Me</h3>
+        <ul>
+          <li class="fragment">
+            has loved programming since the age of 10
+          <li class="fragment">
+            has been emplyed at large and small companies mainly in the area of business intelligence
+          <li class="fragment">
+            has been a consultant with insights into many other companies
+          <li class="fragment">
+            doing my second startup, still filing lessons from the first
+        </ul>
+        <div class="fragment">
+          Still, opinions are just opinions...
+        </div>
+      </section>
+
+      <section>
+        <h3>Section 2:</h3>
+        <h2>The Struggles of the Developers</h2>
+      </section>
+
+      <section>
+
+        <h3>The Struggles of the Developers</h3>
+        <h2>TOC</h2>
+        <ol>
+          <li class="fragment">
+            Accidental Complexity
+          <li class="fragment">
+            Cruft
+          <li class="fragment">
+            Uncertainty and Estimation
+          <li class="fragment">
+            This is also about YOU
+        </ol>
+
+      </section>
+      <section>
+        <h2>Accidental Complexity</h2>
+        <section>
+          <i>Key concept to understand why software development is hard</i>
+        </section>
+
+        <section>
+          <i>"Everything should be made as simple as possible, but not simpler"</i>
+        </section>
+
+        <section>
+          As a project grows, the requirements change. A simple analogy might be a company. The amount of "stuff" needed to deal with itself is very different between a one-man startup and big company with hundreds of employees.
+        </section>
+
+        <section>
+          The accumulated accidental complexity of a project is called <i>technical debt</i>.
+        </section>
+
+        <section>
+          The correct <i>level of abstraction</i> or implementation is a <strong>moving target</strong> and will change with:<ul><li>the size of the code base<li>the competence and size of the team<li>quality requirements of the code base
+        </section>
+
+        <section>
+          We are basically always choosing between:<ul>
+            <li>accumulating technical debt in the form of
+              <ul>
+                <li>accidental complexity (things got more complicated than they should be)
+                <li>shortcuts (not complex enough but good for now)
+              </ul>
+            <li>Re-writing old code to an adequate level of complexity
+        </section>
+
+        <section>
+          This is important to know when starting with technological development because either:
+          <ol>
+            <li>Slower start but last longer (spend time estimating the complexity of the problem, choosing tools etc.)
+            <li>Fast start but risk of productivity stagnation
+          </ol>
+          For an MVP or even for PMF-level product, the latter might be the right choice. <strong>Something always trumps nothing.</strong>
+        </section>
+
+        <section>
+          This concept applies also to the aspiring entrepreneur, because so much of what is required when starting a company is accidental complexity compared to the original value proposition.
+        </section>
+
+      </section>
+
+      <section>
+        <h2>Cruft</h2>
+        <section>
+          <i>From the hacker-jargon file:</i>
+          <pre>
+  crufty: /kruhftee/, adj.
+  [very common; origin unknown; poss. from ‘crusty’ or ‘cruddy’]
+
+  1. Poorly built, possibly over-complex.[...] 
+
+  2. Unpleasant, especially to the touch, often with encrusted junk. 
+     Like spilled coffee smeared with peanut butter and catsup.
+
+  3. Generally unpleasant.
+          </pre>
+        </section>
+        <section>
+          <i>Also From the hacker-jargon file:</i>
+          <pre>
+          cruft: /kruhft/
+[very common; back-formation from crufty]
+
+1. n. An unpleasant substance. The dust that gathers under your bed 
+      is cruft; [...] attacking it with a broom only produces more.
+
+2. n. The results of shoddy construction.
+
+3. vt. [...]
+
+4. n. Excess; superfluous junk; used esp. of redundant or 
+      superseded code.
+        </section>
+        <section>
+          <ul>
+            <li>Cruft is the reason no programmer wants to pick up an abandoned project.
+            <li>And therefor why you should put a lot of thought into getting the team right the first time.
+            <li>This only applies if the project has been abandoned, ie, the original team is not available any more.
+            <li>Most teams coming to an abandoned project will want to rewrite from scratch. It is very hard to know if it is the right thing todo.
+        </section>
+      </section>
+
+      <section>
+        All this to talk about ...
+      </section>
+
+      <section>
+        <h3>Uncertainty and estimation</H3>
+        <section>
+          Software is considered a black art.
+        </section>
+
+        <section>
+          Notoriously hard.
+        </section>
+
+        <section>
+          We always get it wrong. Even when we know we always get it wrong.
+        </section>
+
+        <section>
+          Compared to the construction industry.
+        </section>
+
+        <section>
+          How hard can it be? Attempt #1: Novice.
+          <ol><li>Write a spec. <li>Ask a programmer how long he needs to build it?</li></ol>
+          <p>
+          This approach has been proven to always be wrong.
+        </section>
+
+        <section>
+          Attempt #2: Project manager.
+          <ol><li>Write a spec. <li>Ask a programmer how long he needs to build it?<li>Multiply programmer's answers with 2.</ol>
+          <p/>
+          Better but mostly wrong.
+        </section>
+
+        <section>
+          Attempt #3: Experienced project manager.
+          <ol><li>Write a spec. <li>Ask a programmer how long he needs to build it?<li>Multiply programmer's answers with PI.</ol>
+          <p/>
+          Getting closer.
+        </section>
+
+        <section>
+          Attempt #4: Industrial company attempt to normalize it.
+          <ol>
+            <li>Write a spec. 
+            <li>Ask a programmer how long he needs to build it?
+            <li>Ask programmer's colleague how long he needs to build it.
+            <li>Ask programmer's boss how long he needs to build it.
+            <li>Ask each person to give a pessimistic, an optimistic and a reasonable option.
+            <li>Take the avarage of the pessimistic answers.
+          </ol>
+          <p/>
+          It will still be wrong but it will be better.
+        </section>
+
+        <section>
+          All of this is also assuming that the specs are near perfect. Which they are not.
+        </section>
+
+        <section>
+          <img src="http://www.commitstrip.com/wp-content/uploads/2016/08/Strip-Les-specs-cest-du-code-650-finalenglish.jpg"></img>
+        </section>
+
+        <section>
+          Which means; even as a non-technical founder, A LOT more is in your hands than you probably think.
+        </section>
+
+      </section>
+
+      <section>
+        <h3>Section 3:</h3>
+        <h2>A few different ways to buy developers</h2>
+      </section>
+
+      <section>
+        <h3>A few different ways to buy developers</h3>
+        <h2>TOC</h2>
+        <ol>
+          <li class="fragment">
+            Co-founder
+          <li class="fragment">
+            Partner
+          <li class="fragment">
+            Hire
+          <li class="fragment">
+            Web shop / consulting team
+          <li class="fragment">
+            Upwork
+          <li class="fragment">
+            Bonus: Managed Upwork
+          <li class="fragment">
+            Bonus: Do it yourself
+          <li class="fragment">
+            Comparisons
+        </ol>
+      </section>
+    
+
+      <section>
+        <h3>Co-founder</h3>
+        <section>
+          <ol>
+            <li>Understand what you're trying to do better than you do
+            <li>Is better able to communicate your thoughts than you are
+            <li>Specializes in the areas you suck at
+            <li>Makes all others seem a bit pale and uninterresting
+            <li>Raises the ability but even more importantly the potential of the company
+            <li>Just gets it
+            <li>Pretty much like finding a wife or husband
+          </ol>
+        </section>
+
+        <section>
+          <ol>
+            <li>Are hard to come by
+            <li>Don't be stingy - try to work out how you can do this together
+            <li>Have commitment plans that go deeper that vesting agreements
+            <li>Help each other maintain good spiritual health
+            <li>Always do your best to make sure that the other can proceed without you (serve)
+            <li>Please make room for a period of engagement
+          </ol>
+        </section>
+
+        <section>
+          It's a bit like the monks say about a contrite heart: (roughly)<p/>
+          <i>You either have one or you don't. If you don't have one, there is no use preaching about it.</i>
+        </section>
+
+        <section>
+          <ul>
+            <li>If you find or have one - what can you as a non-tech do? 
+            <li>"Get them coffee and cheese burgers." -- Paul Graham
+            <li>(Please do listen to the full <a href="https://itunes.apple.com/us/podcast/how-to-start-a-startup/id922398209">How To Start A Startup-podcast</a>)
+          </ul>
+        </section>
+
+      </section>
+
+      <section>
+        <h3>Partner</h3>
+          <section>
+            <ul>
+              <li>the first lead-developer that has prooven him/herself
+              <li>can work with you / the team
+              <li>has proven to make write code that runs
+              <li>said code has been externally reviewed and said not to be crap
+              <li>has proven to not require almost any management at all (except for the standard project management stuff that all of us could use)
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>has leadership / management <em>potential</em>
+              <li>is able to make progress without project management
+              <li>demonstrate ability to be both sloppy and thorough
+            </ul>
+          </section>
+
+        </section>
+
+      <section>
+        <h3>Hire</h3>
+        <ul>
+          <li>Wider range of competence and commitment
+          <li>A free junior vs and expensive senior?
+          <li>Cost of management?
+          <li>Cost of communication?
+          <li>Inexperienced enthusiasm trumps experienced bitterness.
+        </ul>
+      </section>
+
+      <section>
+        Inhouse (co-founder, partner, hire) evaluation challenges and notes:
+        <ul>
+          <li>Perserverance maybe the most important trait, and the hardest to evaluate.
+          <li>Note: many programmers look seem a bit pist-off when working hard.
+          <li>Technology and language choices are not important unless super-junior.
+          <li>Beware of gap between willingness and ability.
+        </ul>
+      </section>
+
+      <section>
+        Inhouse (co-founder, partner, hire) conclusions
+        <section>
+          <ul>
+            <li>Co-founder is prefered but rare
+            <li>Partners are found among hires
+          </ul>
+        </section>
+
+        <section>
+          <ul>
+            <li>Inhouse is prefered over external due to 
+            <li>Cost of maintining understanding of "trivial complexity"
+            <li>Cost of picking up an abandoned project
+            <li>Requires and allows for non-developers to take ownership of YOUR OWN project
+          </ul>
+        </section>
+
+      </section>
+
+      <section>
+
+        <h3>Web shop / Consultants</h3>
+
+        <section>
+          <ul>
+            <li>Look for qualified project management
+            <li>Look through portfolio
+            <li>Ask to meet the team
+            <li>Discuss procedures for end-of-project uncertainty
+            <li>Ask to be included and guided on the inside, to learn
+          </ul>
+        </section>
+
+        <section>
+          A good option when/if:
+          <ul>
+            <li>You can afford it AND
+            <li>Lack competence or willingness to
+              <ul>
+                <li>hire
+                <li>specify project
+                <li>manage project
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          A good option when/if:
+          <ul>
+            <li>Your project is well defined and understood
+            <li>The shop has extensive experience of how to do that
+            <li>Could potentially re-use portolio project (but don't count on it)
+          </ul>
+        </section>
+
+        <section>
+          Drawbacks include:
+          <ul>
+            <li>Expensive
+            <li>Out of Money?
+            <li>Painful End-of-project conflicts and lock-ins
+            <li>Lack of build-up of in-house competence
+            <li>Have to restart the hiring project at a later stage (if you're building a company)
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h3>Upwork and Hubstaff</h3>
+        <section>
+          A good option when/if:
+          <ul>
+            <li>Well defined project
+            <li>Willing and able to do project management
+            <li>Comfortable navigating cultural differences
+            <li>Willing to spend time finding the right match
+          </ul>
+        </section>
+        <section>
+          Beware of challenges:
+          <ul>
+            <li>Timezones and Cultural distance
+            <li>Agenices vs free lancers
+            <li>Non-tech or inexperienced project managers may have a hard time
+            <li>Price may or may not be an indicator of quality
+            <li>$20 / h a decent indicator
+          </ul>
+        </section>
+        <section>
+          However, it might be worth it: bubb.la and cor.ax
+        </section>
+      </section>
+
+      <section>
+        <h2>Bonus:</h2>
+        <h3>Learn It Yourself</h3>
+      </section>
+
+      <section>
+        <h3>Learn It Yourself</h3>
+        <section>
+          For most it is not going to be the best investment of your time. But for some!
+        </section>
+        <section>
+          <ul>
+            <li>Beginners enthusiasm goes a long way
+            <li>Not knowing the correct way can sometimes yield new ways
+            <li>If you have more time than money
+            <li>Or sick of waiting for the right person for the job
+            <li>Most startups are technologically trivial
+            <li>It's fairly easy for someone experienced to help a newbie stay clear of pitfalls
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h2>Conclusions and recommendations</h2>
+        <section>
+          <h3>Even more opinonated</h3>
+        </section>
+        <section>
+          Progress trumps perfection - go with what you can go with
+        </section>
+        <section>
+          If you can, go with any inhouse option
+          <ul>
+            <li>If you're in this for a few years, keep it as closely to you as possible
+            <li>Allows you to step into<ul>
+              <li>project management
+              <li>specifications
+              <li>content management
+              <li>prioritization
+            </ul>
+            <li>Even if it means you'll have to learn some new things
+          </ul>
+        </section>
+        <section>
+          The risk of not doing things in-house:
+          <ul>
+            <li>Wishful thinking that someone else will solve your problems
+            <li>Lack of ownership of the development process
+            <li>Lack of buildup of technical experties
+            <li>Lack of buildup of knowledge about your own product
+          </ul>
+        </section>
+        <section>
+          The risk of not doing things in-house:
+          <ul>
+            <li>The project becoming abandoned
+            <li>Potential lack of hand-over between teams/developers
+          </ul>
+        </section>
+        <section>
+          The benefits of <b>not</b> doing things inhouse
+          <ul>
+            <li>Something else is your bottleneck (highly unlikely in the early stages)
+            <li>Inability or unwillingness to partake of the process
+            <li>A trivial enough product that is done when it is done and you don't have to think about it
+          </ul>
+        </section>
+        <section>
+          The benefits of <b>not</b> doing things inhouse
+          <ul>
+            <li>Potentially getting a high-performance team
+            <li>Getting very well-qualified project management
+            <li>You <i>could</i> find your perfect match!
+          </ul>
+        </section>
+        <section>
+          Which one is for me?
+          <ul>
+            <li class="fragment">More time than money? <span class="fragment">All inhouse options and Upwork.</span>
+            <li class="fragment">More money than time? <span class="fragment">Consultant shop.</span>
+            <li class="fragment">Some money and some time? <span class="fragment">Consider Upwork. Definitely try to hire.</span>
+            <li class="fragment">Always look for the next perfect hire/partner.
+            <li class="fragment">Always learn more how to manage your project/product.
+            <li class="fragment">Are you building a company or a product?
+          </ul>
+        </section>
+        <section>
+          Conclusions revisited: If you are building a company - inhouse is recommended.
+        </section>
+      </section>
+
+      <section>
+        <h3>Section 4:</h3>
+        <h2>What You Can Do On Your Own</h2>
+      </section>
+
+      <section>
+
+        <h3>What Can YOU Do: TOC</h3>
+        <ol>
+          <li class="fragment">
+            Github
+          <li class="fragment">
+            Know what you want
+          <li class="fragment">
+            User stories
+          <li class="fragment">
+            Produce content
+          <li class="fragment">
+            Design (does not need to be nice)
+          <li class="fragment">
+            Excel and other ways to model your data
+          <li class="fragment">
+            super-dummy implementations
+          <li class="fragment">
+            UI design tools
+        </ol>
+
+      </section>
+
+      <section>
+        <h3>Github</h3>
+        <ul>
+          <li>Get on there. Not an option.
+          <li>Take ownership of the development of your product.
+          <li>Minimize boilerplate when onboarding.
+          <li>Makes you less sensitive to teams or developers leaving.
+          <li>Excellent for content production.
+          <li>Allows for manic founders to control product details.
+        </ul>
+      </section>
+
+      <section>
+        <h3>Github</h3>
+        <ul>
+          <li>Has wiki for documentation.
+          <li>Has "issues" that can be used as a ticket-system.
+          <li>"Natively" supports trying out new stuff and pivoting with so called branches.
+          <li>Keeps track of developer productivity.
+          <li>Good place to collect specifications and design as well.
+        </ul>
+      </section>
+
+      <section>
+        <h3>Github</h3>
+        <ul>
+          <li>Bonus: Github pages!
+          <li>Check out my dummy at: https://marcuspl.github.io/product-dummy-dummy/
+          <li>More on developing prototypes this way below.
+          <li>Host your company website for free!
+          <li>Check out my collague: <a href="http://stephenhuey.com/">http://stephenhuey.com/</a>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Know what you want</h3>
+        <ul>
+          <li>A LOT of software development is about specifications.
+          <li>Specifications is partly about knowing what you want.
+          <li>Start specifying your product in any way you can.
+          <li>Be creative!
+          <li>(Almost) NOTHING in your product is going to show up without you intending it.
+          <li>More below.
+        </ul>
+      </section>
+
+      <section>
+        <h3>User Stories</h3>
+        <ul>
+          <li>Write down all the things the user is going to be able to do as stories.
+          <li>User logs in. Sees list of things. Clicks on first thing. Logs out. <i>etc.</i>
+          <li>Google "user stories" but don't get caught up in format or formalities.
+          <li>Basically, if you give the stories to a developer, your product will be build. That's the goal.
+          <li>VERY powerful tool.
+          <li>Upload them to github to track changes. ;)
+        </ul>
+      </section>
+
+      <section>
+        <h3>Produce Content</h3>
+        <ul>
+          <li>Developers often use placeholder text: Lorem Ipsum.
+          <li>The content is part of your product.
+          <li>Get help from copy-writers.
+        </ul>
+      </section>
+
+      <section>
+        <h3>Design</h3>
+        <ul>
+          <li>Design doesn't have to be nice (but can be!)
+          <li>Get your pens and papers out and draw the different views of the product
+          <li>... and their different states.
+          <li>Get a designer or do it yourself!
+          <li>A lot of our early pitches was showing a pdf that the designer made!
+        </ul>
+      </section>
+
+      <section>
+        <h3>Excel and data modeling</h3>
+        <ul>
+          <li>If your product contains different states of data - mock it in excel or similar
+          <li>Even if the data is too advanced, try to write down what you believe it will be
+          <li>Workflow based on states of data could and should be easily modelled in Excel.
+        </ul>
+      </section>
+
+      <section>
+        <h3>Dummy Prototypes</h3>
+        <ul>
+          <li>Check out <a href="https://github.com/marcuspl/product-dummy-dummy">Product-dummy-dummy</a>
+          <li>Take subset of html (that you'll learn in 15 minutes) and start building your prototype.
+          <li>Skip all logic (login forms just doesn nothing) and mock all data.
+          <li>Try to cover your full product.
+          <li>Make a site-map of it.
+        </ul>
+      </section>
+
+      <section>
+        <h3>UI Design Tools</h3>
+        <ul>
+          <li>I love Ionic but haven't yet tried their <a href="https://creator.ionic.io/">App Creator</a>
+          <li>Google "user interface sketch" "ui mockups" etc.
+        </ul>
+      </section>
+
+      <section>
+        <h3>Keep moving!</h3>
+        <ul>
+          <li>All of the above things count as building your product
+          <li>Discovering what your product should be counts as development
+          <li>Part of a product is abstract. It doesn't mean it doesn't exist.
+          <li>While waiting for the perfect technical team there is a ton of stuff to do!
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://github.com/marcuspl/reveal.js/lib/js/head.min.js"></script>
+  <script src="https://github.com/marcuspl/reveal.js/js/reveal.js"></script>
+
+  <script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+          history: true,
+
+          // More info https://github.com/hakimel/reveal.js#dependencies
+          dependencies: [
+            { src: 'https://github.com/marcuspl/reveal.js/plugin/markdown/marked.js' },
+            { src: 'https://github.com/marcuspl/reveal.js/plugin/markdown/markdown.js' },
+            { src: 'https://github.com/marcuspl/reveal.js/plugin/notes/notes.js', async: true },
+            { src: 'https://github.com/marcuspl/reveal.js/plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+          ]
+        });
+
+
+  </script>
+
+  </body>
+
+</html>
