@@ -15,7 +15,7 @@ We'll see how it goes.
 
   <title>Luminare - Solving Sepsis</title>
 
-  <link rel="stylesheet" href="reveal.js/blob/master/css/reveal.css">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
   <link rel="stylesheet" href="reveal.js/css/theme/white.css">
 
   <!-- Theme used for syntax highlighting of code -->
@@ -65,18 +65,14 @@ We'll see how it goes.
       <section>
         <h3>Table of contents</h3>
         <ol>
-          <li class="fragment">
-            Introducing myself
-          <li class="fragment">
-            The struggles of the developer
-          <li class="fragment">
-            A few different ways to buy developers 
-          <li class="fragment">
-            What you can do on your own
+          <li><a href="#/me">Introducing Myself</a>
+          <li><a href="#/philosophy">The Struggles of the Developer</a>
+          <li><a href="#/buying">A Few Different Ways To Buy Development</a>
+          <li><a href="#/inyourhands">What You Can Do On Your Own</a>
         </ol>
       </section>
 
-      <section>
+      <section id="me">
         <h3>Section 1: Me</h3>
         <ul>
           <li class="fragment">
@@ -88,12 +84,9 @@ We'll see how it goes.
           <li class="fragment">
             doing my second startup, still filing lessons from the first
         </ul>
-        <div class="fragment">
-          Still, opinions are just opinions...
-        </div>
       </section>
 
-      <section>
+      <section id="philosophy">
         <h3>Section 2:</h3>
         <h2>The Struggles of the Developers</h2>
       </section>
@@ -133,24 +126,24 @@ We'll see how it goes.
         </section>
 
         <section>
-          The correct <i>level of abstraction</i> or implementation is a <strong>moving target</strong> and will change with:<ul><li>the size of the code base<li>the competence and size of the team<li>quality requirements of the code base
+          The correct <i>level of abstraction</i> or implementation is a <strong>moving target</strong> and will change with:<ul><li class="fragment">the size of the code base<li class="fragment">the competence and size of the team<li class="fragment">quality requirements of the code base
         </section>
 
         <section>
           We are basically always choosing between:<ul>
-            <li>accumulating technical debt in the form of
+            <li class="fragment">accumulating technical debt in the form of
               <ul>
-                <li>accidental complexity (things got more complicated than they should be)
-                <li>shortcuts (not complex enough but good for now)
+                <li class="fragment">accidental complexity (things got more complicated than they should be)
+                <li class="fragment">shortcuts (not complex enough but good for now)
               </ul>
-            <li>Re-writing old code to an adequate level of complexity
+            <li class="fragment">Re-writing old code to an adequate level of complexity
         </section>
 
         <section>
           This is important to know when starting with technological development because either:
           <ol>
-            <li>Slower start but last longer (spend time estimating the complexity of the problem, choosing tools etc.)
-            <li>Fast start but risk of productivity stagnation
+            <li class="fragment">Slower start but last longer (spend time estimating the complexity of the problem, choosing tools etc.)
+            <li class="fragment">Fast start but risk of productivity stagnation
           </ol>
           For an MVP or even for PMF-level product, the latter might be the right choice. <strong>Something always trumps nothing.</strong>
         </section>
@@ -195,10 +188,10 @@ We'll see how it goes.
         </section>
         <section>
           <ul>
-            <li>Cruft is the reason no programmer wants to pick up an abandoned project.
-            <li>And therefor why you should put a lot of thought into getting the team right the first time.
-            <li>This only applies if the project has been abandoned, ie, the original team is not available any more.
-            <li>Most teams coming to an abandoned project will want to rewrite from scratch. It is very hard to know if it is the right thing todo.
+            <li class="fragment">Cruft is the reason no programmer wants to pick up an abandoned project.
+            <li class="fragment">And therefor why you should put a lot of thought into getting the team right the first time.
+            <li class="fragment">This only applies if the project has been abandoned, ie, the original team is not available any more.
+            <li class="fragment">Most teams coming to an abandoned project will want to rewrite from scratch. It is very hard to know if it is the right thing todo.
         </section>
       </section>
 
@@ -209,7 +202,7 @@ We'll see how it goes.
       <section>
         <h3>Uncertainty and estimation</H3>
         <section>
-          Software is considered a black art.
+          Software estimation is considered a black art.
         </section>
 
         <section>
@@ -226,21 +219,21 @@ We'll see how it goes.
 
         <section>
           How hard can it be? Attempt #1: Novice.
-          <ol><li>Write a spec. <li>Ask a programmer how long he needs to build it?</li></ol>
+          <ol><li class="fragment">Write a spec. <li class="fragment">Ask a programmer how long he needs to build it?</li></ol>
           <p>
           This approach has been proven to always be wrong.
         </section>
 
         <section>
           Attempt #2: Project manager.
-          <ol><li>Write a spec. <li>Ask a programmer how long he needs to build it?<li>Multiply programmer's answers with 2.</ol>
+          <ol><li class="fragment">Write a spec. <li class="fragment">Ask a programmer how long he needs to build it?<li class="fragment">Multiply programmer's answers with 2.</ol>
           <p/>
           Better but mostly wrong.
         </section>
 
         <section>
           Attempt #3: Experienced project manager.
-          <ol><li>Write a spec. <li>Ask a programmer how long he needs to build it?<li>Multiply programmer's answers with PI.</ol>
+          <ol><li class="fragment">Write a spec. <li class="fragment">Ask a programmer how long he needs to build it?<li class="fragment">Multiply programmer's answers with PI.</ol>
           <p/>
           Getting closer.
         </section>
@@ -248,12 +241,12 @@ We'll see how it goes.
         <section>
           Attempt #4: Industrial company attempt to normalize it.
           <ol>
-            <li>Write a spec. 
-            <li>Ask a programmer how long he needs to build it?
-            <li>Ask programmer's colleague how long he needs to build it.
-            <li>Ask programmer's boss how long he needs to build it.
-            <li>Ask each person to give a pessimistic, an optimistic and a reasonable option.
-            <li>Take the avarage of the pessimistic answers.
+            <li class="fragment">Write a spec. 
+            <li class="fragment">Ask a programmer how long he needs to build it?
+            <li class="fragment">Ask programmer's colleague how long he needs to build it.
+            <li class="fragment">Ask programmer's boss how long he needs to build it.
+            <li class="fragment">Ask each person to give a pessimistic, an optimistic and a reasonable option.
+            <li class="fragment">Take the avarage of the pessimistic answers.
           </ol>
           <p/>
           It will still be wrong but it will be better.
@@ -273,7 +266,7 @@ We'll see how it goes.
 
       </section>
 
-      <section>
+      <section id="buying">
         <h3>Section 3:</h3>
         <h2>A few different ways to buy developers</h2>
       </section>
@@ -306,24 +299,24 @@ We'll see how it goes.
         <h3>Co-founder</h3>
         <section>
           <ol>
-            <li>Understand what you're trying to do better than you do
-            <li>Is better able to communicate your thoughts than you are
-            <li>Specializes in the areas you suck at
-            <li>Makes all others seem a bit pale and uninterresting
-            <li>Raises the ability but even more importantly the potential of the company
-            <li>Just gets it
-            <li>Pretty much like finding a wife or husband
+            <li class="fragment">Understand what you're trying to do better than you do
+            <li class="fragment">Is better able to communicate your thoughts than you are
+            <li class="fragment">Specializes in the areas you suck at
+            <li class="fragment">Makes all others seem a bit pale and uninterresting
+            <li class="fragment">Raises the ability but even more importantly the potential of the company
+            <li class="fragment">Just gets it
+            <li class="fragment">Pretty much like finding a wife or husband
           </ol>
         </section>
 
         <section>
           <ol>
-            <li>Are hard to come by
-            <li>Don't be stingy - try to work out how you can do this together
-            <li>Have commitment plans that go deeper that vesting agreements
-            <li>Help each other maintain good spiritual health
-            <li>Always do your best to make sure that the other can proceed without you (serve)
-            <li>Please make room for a period of engagement
+            <li class="fragment">Are hard to come by
+            <li class="fragment">Don't be stingy - try to work out how you can do this together
+            <li class="fragment">Have commitment plans that go deeper that vesting agreements
+            <li class="fragment">Help each other maintain good spiritual health
+            <li class="fragment">Always do your best to make sure that the other can proceed without you (serve)
+            <li class="fragment">Please make room for a period of engagement
           </ol>
         </section>
 
@@ -334,9 +327,9 @@ We'll see how it goes.
 
         <section>
           <ul>
-            <li>If you find or have one - what can you as a non-tech do? 
-            <li>"Get them coffee and cheese burgers." -- Paul Graham
-            <li>(Please do listen to the full <a href="https://itunes.apple.com/us/podcast/how-to-start-a-startup/id922398209">How To Start A Startup-podcast</a>)
+            <li class="fragment">If you find or have one - what can you as a non-tech do? 
+            <li class="fragment">"Get them coffee and cheese burgers." -- Paul Graham
+            <li class="fragment">(Please do listen to the full <a href="https://itunes.apple.com/us/podcast/how-to-start-a-startup/id922398209">How To Start A Startup-podcast</a>)
           </ul>
         </section>
 
@@ -346,18 +339,18 @@ We'll see how it goes.
         <h3>Partner</h3>
           <section>
             <ul>
-              <li>the first lead-developer that has prooven him/herself
-              <li>can work with you / the team
-              <li>has proven to make write code that runs
-              <li>said code has been externally reviewed and said not to be crap
-              <li>has proven to not require almost any management at all (except for the standard project management stuff that all of us could use)
+              <li class="fragment">the first lead-developer that has prooven him/herself
+              <li class="fragment">can work with you / the team
+              <li class="fragment">has proven to make write code that runs
+              <li class="fragment">said code has been externally reviewed and said not to be crap
+              <li class="fragment">has proven to not require almost any management at all (except for the standard project management stuff that all of us could use)
             </ul>
           </section>
           <section>
             <ul>
-              <li>has leadership / management <em>potential</em>
-              <li>is able to make progress without project management
-              <li>demonstrate ability to be both sloppy and thorough
+              <li class="fragment">has leadership / management <em>potential</em>
+              <li class="fragment">is able to make progress without project management
+              <li class="fragment">demonstrate ability to be both sloppy and thorough
             </ul>
           </section>
 
@@ -366,21 +359,21 @@ We'll see how it goes.
       <section>
         <h3>Hire</h3>
         <ul>
-          <li>Wider range of competence and commitment
-          <li>A free junior vs and expensive senior?
-          <li>Cost of management?
-          <li>Cost of communication?
-          <li>Inexperienced enthusiasm trumps experienced bitterness.
+          <li class="fragment">Wider range of competence and commitment
+          <li class="fragment">A free junior vs and expensive senior?
+          <li class="fragment">Cost of management?
+          <li class="fragment">Cost of communication?
+          <li class="fragment">Inexperienced enthusiasm trumps experienced bitterness.
         </ul>
       </section>
 
       <section>
         Inhouse (co-founder, partner, hire) evaluation challenges and notes:
         <ul>
-          <li>Perserverance maybe the most important trait, and the hardest to evaluate.
-          <li>Note: many programmers look seem a bit pist-off when working hard.
-          <li>Technology and language choices are not important unless super-junior.
-          <li>Beware of gap between willingness and ability.
+          <li class="fragment">Perserverance maybe the most important trait, and the hardest to evaluate.
+          <li class="fragment">Note: many programmers look seem a bit pist-off when working hard.
+          <li class="fragment">Technology and language choices are not important unless super-junior.
+          <li class="fragment">Beware of gap between willingness and ability.
         </ul>
       </section>
 
@@ -388,17 +381,17 @@ We'll see how it goes.
         Inhouse (co-founder, partner, hire) conclusions
         <section>
           <ul>
-            <li>Co-founder is prefered but rare
-            <li>Partners are found among hires
+            <li class="fragment">Co-founder is prefered but rare
+            <li class="fragment">Partners are found among hires
           </ul>
         </section>
 
         <section>
           <ul>
-            <li>Inhouse is prefered over external due to 
-            <li>Cost of maintining understanding of "trivial complexity"
-            <li>Cost of picking up an abandoned project
-            <li>Requires and allows for non-developers to take ownership of YOUR OWN project
+            <li class="fragment">Inhouse is prefered over external due to 
+            <li class="fragment">Cost of maintining understanding of "trivial complexity"
+            <li class="fragment">Cost of picking up an abandoned project
+            <li class="fragment">Requires and allows for non-developers to take ownership of YOUR OWN project
           </ul>
         </section>
 
@@ -410,23 +403,23 @@ We'll see how it goes.
 
         <section>
           <ul>
-            <li>Look for qualified project management
-            <li>Look through portfolio
-            <li>Ask to meet the team
-            <li>Discuss procedures for end-of-project uncertainty
-            <li>Ask to be included and guided on the inside, to learn
+            <li class="fragment">Look for qualified project management
+            <li class="fragment">Look through portfolio
+            <li class="fragment">Ask to meet the team
+            <li class="fragment">Discuss procedures for end-of-project uncertainty
+            <li class="fragment">Ask to be included and guided on the inside, to learn
           </ul>
         </section>
 
         <section>
           A good option when/if:
           <ul>
-            <li>You can afford it AND
-            <li>Lack competence or willingness to
+            <li class="fragment">You can afford it AND
+            <li class="fragment">Lack competence or willingness to
               <ul>
-                <li>hire
-                <li>specify project
-                <li>manage project
+                <li class="fragment">hire
+                <li class="fragment">specify project
+                <li class="fragment">manage project
               </ul>
             </li>
           </ul>
@@ -434,20 +427,20 @@ We'll see how it goes.
         <section>
           A good option when/if:
           <ul>
-            <li>Your project is well defined and understood
-            <li>The shop has extensive experience of how to do that
-            <li>Could potentially re-use portolio project (but don't count on it)
+            <li class="fragment">Your project is well defined and understood
+            <li class="fragment">The shop has extensive experience of how to do that
+            <li class="fragment">Could potentially re-use portolio project (but don't count on it)
           </ul>
         </section>
 
         <section>
           Drawbacks include:
           <ul>
-            <li>Expensive
-            <li>Out of Money?
-            <li>Painful End-of-project conflicts and lock-ins
-            <li>Lack of build-up of in-house competence
-            <li>Have to restart the hiring project at a later stage (if you're building a company)
+            <li class="fragment">Expensive
+            <li class="fragment">Out of Money?
+            <li class="fragment">Painful End-of-project conflicts and lock-ins
+            <li class="fragment">Lack of build-up of in-house competence
+            <li class="fragment">Have to restart the hiring project at a later stage (if you're building a company)
           </ul>
         </section>
       </section>
@@ -457,20 +450,20 @@ We'll see how it goes.
         <section>
           A good option when/if:
           <ul>
-            <li>Well defined project
-            <li>Willing and able to do project management
-            <li>Comfortable navigating cultural differences
-            <li>Willing to spend time finding the right match
+            <li class="fragment">Well defined project
+            <li class="fragment">Willing and able to do project management
+            <li class="fragment">Comfortable navigating cultural differences
+            <li class="fragment">Willing to spend time finding the right match
           </ul>
         </section>
         <section>
           Beware of challenges:
           <ul>
-            <li>Timezones and Cultural distance
-            <li>Agenices vs free lancers
-            <li>Non-tech or inexperienced project managers may have a hard time
-            <li>Price may or may not be an indicator of quality
-            <li>$20 / h a decent indicator
+            <li class="fragment">Timezones and Cultural distance
+            <li class="fragment">Agenices vs free lancers
+            <li class="fragment">Non-tech or inexperienced project managers may have a hard time
+            <li class="fragment">Price may or may not be an indicator of quality
+            <li class="fragment">$20 / h a decent indicator
           </ul>
         </section>
         <section>
@@ -490,12 +483,12 @@ We'll see how it goes.
         </section>
         <section>
           <ul>
-            <li>Beginners enthusiasm goes a long way
-            <li>Not knowing the correct way can sometimes yield new ways
-            <li>If you have more time than money
-            <li>Or sick of waiting for the right person for the job
-            <li>Most startups are technologically trivial
-            <li>It's fairly easy for someone experienced to help a newbie stay clear of pitfalls
+            <li class="fragment">Beginners enthusiasm goes a long way
+            <li class="fragment">Not knowing the correct way can sometimes yield new ways
+            <li class="fragment">If you have more time than money
+            <li class="fragment">Or sick of waiting for the right person for the job
+            <li class="fragment">Most startups are technologically trivial
+            <li class="fragment">It's fairly easy for someone experienced to help a newbie stay clear of pitfalls
           </ul>
         </section>
       </section>
@@ -511,46 +504,46 @@ We'll see how it goes.
         <section>
           If you can, go with any inhouse option
           <ul>
-            <li>If you're in this for a few years, keep it as closely to you as possible
-            <li>Allows you to step into<ul>
-              <li>project management
-              <li>specifications
-              <li>content management
-              <li>prioritization
+            <li class="fragment">If you're in this for a few years, keep it as closely to you as possible
+            <li class="fragment">Allows you to step into<ul>
+              <li class="fragment">project management
+              <li class="fragment">specifications
+              <li class="fragment">content management
+              <li class="fragment">prioritization
             </ul>
-            <li>Even if it means you'll have to learn some new things
+            <li class="fragment">Even if it means you'll have to learn some new things
           </ul>
         </section>
         <section>
           The risk of not doing things in-house:
           <ul>
-            <li>Wishful thinking that someone else will solve your problems
-            <li>Lack of ownership of the development process
-            <li>Lack of buildup of technical experties
-            <li>Lack of buildup of knowledge about your own product
+            <li class="fragment">Wishful thinking that someone else will solve your problems
+            <li class="fragment">Lack of ownership of the development process
+            <li class="fragment">Lack of buildup of technical experties
+            <li class="fragment">Lack of buildup of knowledge about your own product
           </ul>
         </section>
         <section>
           The risk of not doing things in-house:
           <ul>
-            <li>The project becoming abandoned
-            <li>Potential lack of hand-over between teams/developers
+            <li class="fragment">The project becoming abandoned
+            <li class="fragment">Potential lack of hand-over between teams/developers
           </ul>
         </section>
         <section>
           The benefits of <b>not</b> doing things inhouse
           <ul>
-            <li>Something else is your bottleneck (highly unlikely in the early stages)
-            <li>Inability or unwillingness to partake of the process
-            <li>A trivial enough product that is done when it is done and you don't have to think about it
+            <li class="fragment">Something else is your bottleneck (highly unlikely in the early stages)
+            <li class="fragment">Inability or unwillingness to partake of the process
+            <li class="fragment">A trivial enough product that is done when it is done and you don't have to think about it
           </ul>
         </section>
         <section>
           The benefits of <b>not</b> doing things inhouse
           <ul>
-            <li>Potentially getting a high-performance team
-            <li>Getting very well-qualified project management
-            <li>You <i>could</i> find your perfect match!
+            <li class="fragment">Potentially getting a high-performance team
+            <li class="fragment">Getting very well-qualified project management
+            <li class="fragment">You <i>could</i> find your perfect match!
           </ul>
         </section>
         <section>
@@ -569,7 +562,7 @@ We'll see how it goes.
         </section>
       </section>
 
-      <section>
+      <section id="inyourhands">
         <h3>Section 4:</h3>
         <h2>What You Can Do On Your Own</h2>
       </section>
@@ -601,106 +594,106 @@ We'll see how it goes.
       <section>
         <h3>Github</h3>
         <ul>
-          <li>Get on there. Not an option.
-          <li>Take ownership of the development of your product.
-          <li>Minimize boilerplate when onboarding.
-          <li>Makes you less sensitive to teams or developers leaving.
-          <li>Excellent for content production.
-          <li>Allows for manic founders to control product details.
+          <li class="fragment">Get on there. Not an option.
+          <li class="fragment">Take ownership of the development of your product.
+          <li class="fragment">Minimize boilerplate when onboarding.
+          <li class="fragment">Makes you less sensitive to teams or developers leaving.
+          <li class="fragment">Excellent for content production.
+          <li class="fragment">Allows for manic founders to control product details.
         </ul>
       </section>
 
       <section>
         <h3>Github</h3>
         <ul>
-          <li>Has wiki for documentation.
-          <li>Has "issues" that can be used as a ticket-system.
-          <li>"Natively" supports trying out new stuff and pivoting with so called branches.
-          <li>Keeps track of developer productivity.
-          <li>Good place to collect specifications and design as well.
+          <li class="fragment">Has wiki for documentation.
+          <li class="fragment">Has "issues" that can be used as a ticket-system.
+          <li class="fragment">"Natively" supports trying out new stuff and pivoting with so called branches.
+          <li class="fragment">Keeps track of developer productivity.
+          <li class="fragment">Good place to collect specifications and design as well.
         </ul>
       </section>
 
       <section>
         <h3>Github</h3>
         <ul>
-          <li>Bonus: Github pages!
-          <li>Check out my dummy at: https://marcuspl.github.io/product-dummy-dummy/
-          <li>More on developing prototypes this way below.
-          <li>Host your company website for free!
-          <li>Check out my collague: <a href="http://stephenhuey.com/">http://stephenhuey.com/</a>
+          <li class="fragment">Bonus: Github pages!
+          <li class="fragment">Check out my dummy at: https://marcuspl.github.io/product-dummy-dummy/
+          <li class="fragment">More on developing prototypes this way below.
+          <li class="fragment">Host your company website for free!
+          <li class="fragment">Check out my collague: <a href="http://stephenhuey.com/">http://stephenhuey.com/</a>
         </ul>
       </section>
 
       <section>
         <h3>Know what you want</h3>
         <ul>
-          <li>A LOT of software development is about specifications.
-          <li>Specifications is partly about knowing what you want.
-          <li>Start specifying your product in any way you can.
-          <li>Be creative!
-          <li>(Almost) NOTHING in your product is going to show up without you intending it.
-          <li>More below.
+          <li class="fragment">A LOT of software development is about specifications.
+          <li class="fragment">Specifications is partly about knowing what you want.
+          <li class="fragment">Start specifying your product in any way you can.
+          <li class="fragment">Be creative!
+          <li class="fragment">(Almost) NOTHING in your product is going to show up without you intending it.
+          <li class="fragment">More below.
         </ul>
       </section>
 
       <section>
         <h3>User Stories</h3>
         <ul>
-          <li>Write down all the things the user is going to be able to do as stories.
-          <li>User logs in. Sees list of things. Clicks on first thing. Logs out. <i>etc.</i>
-          <li>Google "user stories" but don't get caught up in format or formalities.
-          <li>Basically, if you give the stories to a developer, your product will be build. That's the goal.
-          <li>VERY powerful tool.
-          <li>Upload them to github to track changes. ;)
+          <li class="fragment">Write down all the things the user is going to be able to do as stories.
+          <li class="fragment">User logs in. Sees list of things. Clicks on first thing. Logs out. <i>etc.</i>
+          <li class="fragment">Google "user stories" but don't get caught up in format or formalities.
+          <li class="fragment">Basically, if you give the stories to a developer, your product will be build. That's the goal.
+          <li class="fragment">VERY powerful tool.
+          <li class="fragment">Upload them to github to track changes. ;)
         </ul>
       </section>
 
       <section>
         <h3>Produce Content</h3>
         <ul>
-          <li>Developers often use placeholder text: Lorem Ipsum.
-          <li>The content is part of your product.
-          <li>Get help from copy-writers.
+          <li class="fragment">Developers often use placeholder text: Lorem Ipsum.
+          <li class="fragment">The content is part of your product.
+          <li class="fragment">Get help from copy-writers.
         </ul>
       </section>
 
       <section>
         <h3>Design</h3>
         <ul>
-          <li>Design doesn't have to be nice (but can be!)
-          <li>Get your pens and papers out and draw the different views of the product
-          <li>... and their different states.
-          <li>Get a designer or do it yourself!
-          <li>A lot of our early pitches was showing a pdf that the designer made!
+          <li class="fragment">Design doesn't have to be nice (but can be!)
+          <li class="fragment">Get your pens and papers out and draw the different views of the product
+          <li class="fragment">... and their different states.
+          <li class="fragment">Get a designer or do it yourself!
+          <li class="fragment">A lot of our early pitches was showing a pdf that the designer made!
         </ul>
       </section>
 
       <section>
         <h3>Excel and data modeling</h3>
         <ul>
-          <li>If your product contains different states of data - mock it in excel or similar
-          <li>Even if the data is too advanced, try to write down what you believe it will be
-          <li>Workflow based on states of data could and should be easily modelled in Excel.
+          <li class="fragment">If your product contains different states of data - mock it in excel or similar
+          <li class="fragment">Even if the data is too advanced, try to write down what you believe it will be
+          <li class="fragment">Workflow based on states of data could and should be easily modelled in Excel.
         </ul>
       </section>
 
       <section>
         <h3>Dummy Prototypes</h3>
         <ul>
-          <li>Check out <a href="https://github.com/marcuspl/product-dummy-dummy">Product-dummy-dummy</a>
-          <li>Take subset of html (that you'll learn in 15 minutes) and start building your prototype.
-          <li>Skip all logic (login forms just doesn nothing) and mock all data.
-          <li>Try to cover your full product.
-          <li>Make a site-map of it.
+          <li class="fragment">Check out <a href="https://github.com/marcuspl/product-dummy-dummy">Product-dummy-dummy</a>
+          <li class="fragment">Take subset of html (that you'll learn in 15 minutes) and start building your prototype.
+          <li class="fragment">Skip all logic (login forms just doesn nothing) and mock all data.
+          <li class="fragment">Try to cover your full product.
+          <li class="fragment">Make a site-map of it.
         </ul>
       </section>
 
       <section>
         <h3>UI Design Tools</h3>
         <ul>
-          <li>I love Ionic but haven't yet tried their <a href="https://creator.ionic.io/">App Creator</a>
-          <li>Google "user interface sketch" "ui mockups" etc.
+          <li class="fragment">I love Ionic but haven't yet tried their <a href="https://creator.ionic.io/">App Creator</a>
+          <li class="fragment">Google "user interface sketch" "ui mockups" etc.
         </ul>
       </section>
 
@@ -708,17 +701,17 @@ We'll see how it goes.
         <h3>Keep moving!</h3>
         <section>
           <ul>
-            <li>All of the above things count as building your product.
-            <li>Discovering what your product should be counts as development.
-            <li>Part of a product is abstract. It doesn't mean it doesn't exist.
-            <li>While waiting for the perfect technical team there is a ton of stuff to do!
+            <li class="fragment">All of the above things count as building your product.
+            <li class="fragment">Discovering what your product should be counts as development.
+            <li class="fragment">Part of a product is abstract. It doesn't mean it doesn't exist.
+            <li class="fragment">While waiting for the perfect technical team there is a ton of stuff to do!
           </ul>
         </section>
       <section>
         <ul>
-          <li>If you don't like it - fork and modify: <a href="https://github.com/marcuspl/presentations">https://github.com/marcuspl/presentations</a>
-          <li>The best prototype ever made: <a href="https://github.com/marcuspl/product-dummy-dummy">https://github.com/marcuspl/product-dummy-dummy</a>
-          <li>Email me or swing by my desk for questions, comments or coffee.
+          <li class="fragment">If you don't like it - fork and modify: <a href="https://github.com/marcuspl/presentations">https://github.com/marcuspl/presentations</a>
+          <li class="fragment">The best prototype ever made: <a href="https://github.com/marcuspl/product-dummy-dummy">https://github.com/marcuspl/product-dummy-dummy</a>
+          <li class="fragment">Email me or swing by my desk for questions, comments or coffee.
         </ul>
       </section>
       </section>
